@@ -1,10 +1,9 @@
 # Flask-app
-f=
 from flask import Flask
 
 app2 = Flask(__name__)
 
 
-@app2.route('/<name>')
-def index(name):
-	return '<hi>hello {}!<hi>'. format(name)
+@app2.route('/')
+def index():
+	return '<hi>hello {}!<hi>'. format()
